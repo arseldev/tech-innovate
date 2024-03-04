@@ -308,13 +308,17 @@ footer a {
         color: #01303f;
     }
 
+    .teams {
+        padding: 60px 20px;
+    }
+
     .teams h2{
         font-size: 40px;
     }
 
     .teams-container {
         grid-template-columns: repeat(1, 1fr);
-        margin: 20px;
+        margin: 0px;
     }
 
     .products-container {
