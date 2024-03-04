@@ -1,0 +1,253 @@
+/* GENERAL STYLE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid black; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* NAVIGATION STYLE */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #01303f;
+    color: #fff;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-right: 20px;
+}
+
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* HERO STYLE */
+.hero {
+    position: relative;
+    height: 92vh;
+    user-select: none;
+}
+
+.hero-image {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+    width: 100%;
+    position: absolute;
+    filter: brightness(50%);
+}
+
+.hero-text {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: white;
+}
+
+.hero-text h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    text-shadow: 2px 4px 10px #000000;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.hero-text p {
+    z-index: 1;
+}
+
+/* VISI & MISI STYLE */
+.visi-misi {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.visi-misi-background {
+    background-image: url('../images/visi-bg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    filter: opacity(0.2);
+    z-index: 0;
+    position: absolute;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.visi-misi-container {
+    color: black;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.visi-misi-container .visi, .visi-misi-container .misi {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+.visi-misi-container div h2 {
+    font-size: 90px;
+    color: #333;
+}
+
+.visi-misi-container div p {
+    font-size: 20px;
+    color: #01303f;
+}
+
+
+/* TEAMS STYLE */
+.teams {
+    width: 100%;
+    padding: 60px;
+}
+
+.teams h2{
+    text-align: center;
+    font-size: 90px;
+    color: #333;
+}
+
+.teams-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 20px 40px;
+}
+
+.teams-container .team {
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #fefefe;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.teams-container .team img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 0;
+    margin-bottom: 10px;
+}
+
+.teams-container .team .name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.teams-container .team .position {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* PRODUCT STYLE */
+.products {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.products h2 {
+    text-align: left;
+    padding: 60px 10px 10px;
+    font-size: 30px;
+    color: #333;
+}
+
+.products-container {
+    display: grid;
+    margin-top: 10px;
+    column-gap: 20px;
+    row-gap: 40px;
+    grid-template-areas: 
+        'product1 product2 product3'
+        'product4 product4 product5'
+        'product4 product4 product5';
+}
+
+
+.products-container .product1 { grid-area: product1; }
+.products-container .product2 { grid-area: product2; }
+.products-container .product3 { grid-area: product3; }
+.products-container .product4 { grid-area: product4; }
+.products-container .product5 { grid-area: product5; }
+
+.products-container .product {
+    text-align: center;
+}
+
+.products-container .product img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.products-container .product .name {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0 3px;
+    font-size: 14px;
+}
+
+.products-container .product .price {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* FOOTER STYLE */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
