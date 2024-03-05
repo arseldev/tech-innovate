@@ -75,14 +75,25 @@ nav p {
     color: white;
 }
 
-.hero-text h1 {
-    width: 100%;
+.hero-text div {
+    width: 80%;
+    margin: auto;
     text-align: center;
-    font-size: 120px;
     color: white;
     text-shadow: 2px 4px 10px #000000;
     font-weight: bold;
     z-index: 1;
+}
+
+.hero-text div h1 {
+    font-size: 120px;
+    width: 100%;
+}
+
+.hero-text div p {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 20px;
 }
 
 /* VISI & MISI STYLE */
@@ -253,8 +264,12 @@ footer a {
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 1024px) {
-    .hero-text h1 {
+    .hero-text div h1 {
         font-size: 80px;
+    }
+
+    .hero-text div p {
+        font-size: 14px;
     }
 
     .visi-misi-container {
@@ -294,8 +309,12 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-    .hero-text h1 {
+    .hero-text div h1 {
         font-size: 40px;
+    }
+
+    .hero-text div p {
+        font-size: 10px;
     }
 
     .visi-misi-container div h2 {
@@ -319,6 +338,12 @@ footer a {
     .teams-container {
         grid-template-columns: repeat(1, 1fr);
         margin: 0px;
+    }
+
+    .products {
+        width: 100%;
+        margin: auto;
+        padding: 0 20px;
     }
 
     .products-container {
