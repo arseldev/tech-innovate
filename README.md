@@ -86,7 +86,7 @@ _Ikuti petunjuk dibawah untuk penggunaan program._
 
 1. Clone repository
    ```sh
-   git clone https://github.com/accenggg/TechInnovate-Landing-Page
+   git clone https://github.com/arseldev/tech-innovate
    ```
 2. Jalankan program
    ```sh
